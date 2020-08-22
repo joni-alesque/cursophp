@@ -38,6 +38,12 @@
     }
 </style>
 <body>
+    <!-- TIPOS DE CONSULTAS EN EL FORM
+            POST : GUARDAR
+            GET : OBTENER DATA
+            PUT : EDITAR
+            DELETE : ELIMINAR
+         -->
     <h4 style="text-align:center;">Mi formulario</h4>
     <div id="cuerpo">        
         <form action="" method="POST">
