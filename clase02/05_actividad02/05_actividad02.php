@@ -42,5 +42,5 @@
         Saldo a recargar : (saldo a recargar)
         Monto a pagar : (monto a pagar)
         "
-    
+        El formulario debe quedar como la imagen adjunta en esta carpeta, "actividad02.png"
     */
