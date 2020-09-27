@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-primary">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">
+          TEC Tienda
+        </a>
+      </div>      
+    </nav> 
+
+    <div class="container mt-2">
+      <h2>Productos</h2>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary">Acción</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+                <span class="sr-only"></span>        
+        </button>
+        <div class="dropdown-menu">
+          <a href="" class="dropdown-item" id="btn-eliminar-todo">Eliminar todo</a>
+        </div>
+      </div>
+      
+      <div class="row pt-5" id="form-section">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Producto</h4>
+            </div>
+            <div class="card-body">
+              <form id="form-producto">
+                <input type="hidden" id="id">
+                <div class="form-group">
+                  <input type="text" id="nombre" placeholder="Nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="number" id="precio-compra" step="0.01" placeholder="Precio de compra" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="number" id="precio-venta" step="0.01" placeholder="Precio de venta" class="form-control">
+                </div>
+                <div class="form-group">
+                  <select name="tipo-producto" id="tipo-producto" class="form-control">
+                    <option value="#" selected>Selecciona el tipo de producto</option>
+                    <option value="celular" >Celular</option>
+                    <option value="computo" >Computo</option>
+                    <option value="televisor" >Televisor</option>                    
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="number" id="anio" placeholder="Año" min="1900" max="2099" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Guardar" class="btn btn-primary btn-block">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <table class="table table-sm" id="tabla-producto">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Precio Compra</th>
+                <th>Precio Venta</th>
+                <th>Tipo</th>
+                <th>Año</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cuerpo-producto-tabla"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
